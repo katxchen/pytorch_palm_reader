@@ -26,7 +26,7 @@ def create_palm_folder():
 def fill_palm_folder(df):
 
     for file_name in df.imageName:
-        src = "../data/HandImages/" + file_name
+        src = "../data/Hands/" + file_name
         dst = "../data/PalmImages"
         copy(src, dst)
 
