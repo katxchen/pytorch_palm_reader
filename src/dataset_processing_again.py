@@ -15,7 +15,7 @@ def convert_image(img_name, i):
     print(f'{i}/{input_size}')
     try:
         img = cv2.imread(f'{input_images_path}/{img_name}', cv2.IMREAD_GRAYSCALE)
-        img = cv2.resize(img[:,200:1401],(224,224))
+        img = cv2.resize(img[:,200:-200],(224,224))
         img_converted = cv2.rotate(img, cv2.ROTATE_180)
     
     
